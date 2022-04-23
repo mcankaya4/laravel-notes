@@ -8,7 +8,7 @@
 
 `composer create-project --prefer-dist laravel/laravel dirname 9.14.2`
 
-Tüm laravel sürümlerini görmek için [tıklayınızz.](https://packagist.org/packages/laravel/laravel)
+Tüm laravel sürümlerini görmek için [tıklayınız.](https://packagist.org/packages/laravel/laravel)
 
 
 
