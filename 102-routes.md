@@ -76,6 +76,8 @@ Route::get('/home',
 **Contoller içerisindeki show methoduna bağlanıp get ile parametre gönderiyoruz**
 
 ```php
+use App\Http\Controllers\homeController;
+
 Route::get('/home/{id}',
     [homeController::class, 'show']
 );
@@ -84,6 +86,8 @@ Route::get('/home/{id}',
 **Post methodu ile route belirlemek için;**
 
 ```php
+use App\Http\Controllers\homeController;
+
 Route::post('/home/store',
     [homeController::class, 'store']
 );
@@ -92,6 +96,8 @@ Route::post('/home/store',
 **Put methodu ile route belirlemek için;**
 
 ```php
+use App\Http\Controllers\homeController;
+
 Route::put('/home/{id}',
     [homeController::class, 'edit']
 );
@@ -100,5 +106,7 @@ Route::put('/home/{id}',
 **Controller içerisindeki tüm methodlara tek seferde route atamak için;**
 
 ```php
+use App\Http\Controllers\homeController;
+
 Route::resource('home', homeController::class);
 ```
