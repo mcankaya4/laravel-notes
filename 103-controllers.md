@@ -11,30 +11,13 @@ class CategoryController extends Controller
 {
     public function index()
     {
+	$id = 10;
+	return view('welcome', ['id' => $id]);
     }
 
-    public function create()
-    {
-    }
-
-    public function store(Request $request)
-    {
-    }
-
-    public function show($id)
-    {
-    }
-
-    public function edit($id)
-    {
-    }
-
-    public function update(Request $request, $id)
-    {
-    }
-
-    public function destroy($id)
-    {
+    public function go(){
+	return redirect()->route('name');
+	return redirect()->back();
     }
 }
 ```
