@@ -16,7 +16,7 @@ Controller oluşturmak için;
 
 `php artisan make:controller UserController --resource`
 
-**2- Migration**
+**3- Migration**
 
 Table oluşturmak için;
 
@@ -48,7 +48,7 @@ Tüm table ve column'ları geri alıp tekrar migrate etmek için;
 
 `php artisan migrate:refresh`
 
-**3- Model**
+**4- Model**
 
 Model oluşturmak için;
 
