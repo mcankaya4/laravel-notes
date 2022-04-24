@@ -18,3 +18,11 @@ public function go(){
     return redirect()->back();
 }
 ```
+
+**Controllers içerisinde public dizinine erişmek için;**
+
+- public/asset/img.png içerisine erişir.
+
+```php
+public_path('asset/img.png')
+```

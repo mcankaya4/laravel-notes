@@ -110,3 +110,14 @@ use App\Http\Controllers\homeController;
 
 Route::resource('home', homeController::class);
 ```
+
+**Controller route group oluşturmak için;**
+
+```php
+use App\Http\Controllers\CategoryController;
+
+Route::controller(CategoryController::class)->group(function () {
+    Route::get('panel/category', 'index')->name('panel.category');
+    Route::get('panel/category/add', 'create')->name('panel.category.add');
+});
+```

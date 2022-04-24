@@ -27,3 +27,16 @@
 {{route('name', $id)}}
 ```
 
+**Route ile active link vermek için;**
+
+```php
+{{ Route::currentRouteNamed('panel.settings.social') ? 'active' : '' }}
+```
+
+**Birden fazla Url ile active link vermek için;**
+
+```php
+{{ Request::is(['panel/category/*','panel/category']) ? 'active' : '' }}
+```
+
+
