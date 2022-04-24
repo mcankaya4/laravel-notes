@@ -1,5 +1,9 @@
 ## Controllers
 
+- İçerisinde crud işlemleri için methodlar tanımlanmış controller oluşturmak için;
+
+`php artisan make:controller UserController --resource`
+
 **Controllers'dan view'e veri göndermek için;**
 
 ```php

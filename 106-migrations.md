@@ -2,6 +2,10 @@
 
 **Migrations create table**
 
+- users adında table oluşturur.
+
+`php artisan make:migration create_user_table --create=user`
+
 ```php
 Schema::create('categories', function (Blueprint $table) {
     $table->id();
@@ -16,6 +20,10 @@ Schema::create('categories', function (Blueprint $table) {
 ```
 
 **Migrations add column**
+
+- users table içerisinde yeni column oluşturur.
+
+`php artisan make:migration add_new_column_user --table=user`
 
 ```php
 Schema::create('categories', function (Blueprint $table) {

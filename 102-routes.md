@@ -1,5 +1,9 @@
 ## Routes
 
+- Tüm route listesini görmek için
+
+`php artisan route:list`
+
 **Ekrana view çağırmak için;**
 
 ```php
