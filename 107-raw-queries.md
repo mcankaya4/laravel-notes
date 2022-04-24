@@ -15,7 +15,7 @@ DB::insert(
 **READ**
 
 ```php
-DB::select('select * from categories);
+DB::select('select * from categories');
 ```
 
 ```php
