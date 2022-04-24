@@ -1,5 +1,7 @@
 ## Migrations
 
+Öncelikle `.env` dosyamızdan DB bağlantılarını yapalım.
+
 **Migrations create table**
 
 - users adında table oluşturur.
