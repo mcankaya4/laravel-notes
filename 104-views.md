@@ -1,10 +1,29 @@
 ## Views
 
-**Controller'dan view'e veri göndermek için;**
+**View içerisinden public dizinine ulaşmak için method;**
+
+- public/img/img.png dosyasına ulaşır.
 
 ```php
-public function setData()
-{
-    return view('welcome', ['getId'=> $id]);
-}
+{{asset('img/img.png')}}
 ```
+
+**View'de htmlspecialchars kullanarak veriyi yazdırmak için;**
+
+```php
+{{$getId}}
+```
+
+**Form içerisinde TOKEN ve PUT belirlemek;**
+
+```php
+@method('PUT')
+@csrf
+```
+
+**Form action ve get ile parametre göndermek için;**
+
+```php
+{{route('name', $id)}}
+```
+
