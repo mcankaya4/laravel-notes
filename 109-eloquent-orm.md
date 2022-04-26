@@ -4,7 +4,7 @@
 
 - `$fillable = []` izin verilenler.
 - `$guarded = []` izin verilmeyenler.
-- `$table = []` db table adı.
+- `$table = ""` db table adı.
 
 ```php
 class Category extends Model
