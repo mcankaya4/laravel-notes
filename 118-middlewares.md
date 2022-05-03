@@ -36,3 +36,12 @@ Route::middleware(['auth','name'])->group(function () {
 });
 ```
 
+- Controller içerisinde kullanmak;
+
+```php
+public function __construct()
+{
+    $this->middleware('status');
+}
+```
+
