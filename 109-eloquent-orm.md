@@ -5,6 +5,7 @@
 - `$fillable = []` izin verilenler.
 - `$guarded = []` izin verilmeyenler.
 - `$table = ""` db table adı.
+- `public $timestamps = false;` ile timestamp'ler iptal edilir
 
 ```php
 class Category extends Model
