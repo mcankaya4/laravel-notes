@@ -1,5 +1,7 @@
 ## Paginate
 
+php artisan vendor:publish --tag=laravel-pagination
+
 ```php
 Route::get('/', function () {
     $products =  Product::paginate(3);
@@ -9,6 +11,6 @@ Route::get('/', function () {
         echo "<br>";
     }
 
-    echo $products->links();
+    echo $products->links('vendor.pagination.bootstrap-4');
 });
 ```
